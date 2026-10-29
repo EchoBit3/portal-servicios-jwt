@@ -5,3 +5,7 @@ class ApiConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
     name = "api"
     verbose_name = "API de usuarios y permisos"
+
+    def ready(self):
+        # Esquema Bearer JWT para la documentación interactiva.
+        from . import schema  # noqa: F401
