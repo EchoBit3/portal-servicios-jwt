@@ -1,0 +1,12 @@
+{% extends "portal/base.html" %}
+
+{% block titulo %}Error {{ codigo }} · Portal de Servicios{% endblock %}
+
+{% block contenido %}
+<section class="encabezado">
+  <h1>Error {{ codigo }}</h1>
+  <p class="ayuda">{{ mensaje }}</p>
+</section>
+
+<p><a class="boton-secundario" href="{% url 'inicio' %}">Volver al menú principal</a></p>
+{% endblock %}

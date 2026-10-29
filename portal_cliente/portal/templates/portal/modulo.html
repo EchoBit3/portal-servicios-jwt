@@ -1,0 +1,21 @@
+{% extends "portal/base.html" %}
+
+{% block titulo %}{{ opcion.titulo }} · Portal de Servicios{% endblock %}
+
+{% block contenido %}
+<section class="encabezado">
+  <h1>{{ opcion.titulo }}</h1>
+  <p class="ayuda">{{ opcion.descripcion }}</p>
+</section>
+
+<section class="tarjeta-detalle">
+  <p>
+    Acceso concedido a <strong>@{{ username }}</strong> por contar con el permiso
+    <code>{{ opcion.clave }}</code> informado por la API.
+  </p>
+  <p class="nota">
+    Módulo de demostración: el contenido real se implementaría en esta vista.
+  </p>
+  <a class="boton-secundario" href="{% url 'inicio' %}">Volver al menú</a>
+</section>
+{% endblock %}
