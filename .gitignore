@@ -1,0 +1,31 @@
+# Carpeta local de referencia (no se versiona)
+material-inicio-docente/
+
+# Arnés local del agente
+memory.md
+agent.md
+init.sh
+
+# Entornos virtuales y caché de Python
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuración local y bases de datos
+.env
+*.sqlite3
+*.db
+
+# Artefactos de pruebas y cobertura
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Editor e IDEs
+.vscode/
+.idea/
+.DS_Store
+*.swp
